@@ -1,6 +1,67 @@
 {
-  "boards": [],
-  "cards": [],
-  "lists": [],
+  "boards": [
+    {
+      "name": "new board 1",
+      "user": 0,
+      "starred": false,
+      "created": "2024-06-13",
+      "id": 1
+    }
+  ],
+  "cards": [
+    {
+      "order": 0,
+      "boardId": 1,
+      "listId": 1,
+      "name": "duddy",
+      "created": "2024-06-13",
+      "deadline": "2024-06-16",
+      "description": "",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "order": 1,
+      "boardId": 1,
+      "listId": 1,
+      "name": "bro",
+      "created": "2024-06-13",
+      "deadline": "2024-06-16",
+      "description": "",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "order": 2,
+      "boardId": 1,
+      "listId": 1,
+      "name": "bro2",
+      "created": "2024-06-13",
+      "deadline": "2024-06-16",
+      "description": "",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "order": 3,
+      "boardId": 1,
+      "listId": 1,
+      "name": "oh huya",
+      "created": "2024-06-13",
+      "deadline": "2024-06-16",
+      "description": "",
+      "completed": false,
+      "id": 4
+    }
+  ],
+  "lists": [
+    {
+      "boardId": 1,
+      "name": "new list",
+      "order": 0,
+      "created": "2024-06-13",
+      "id": 1
+    }
+  ],
   "users": []
 }

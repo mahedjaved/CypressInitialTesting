@@ -14,4 +14,7 @@ Example project to start setting up initial testing in the Cypress testing libra
 # Cypress Studio
 * Part of the experiments setup in the `settings` section as shown below:
 ![alt text](image.png)
-* Helps us ....
+* Helps us track each of our command as shown
+![alt text](image-1.png)
+* With this we can
+* Recording tools such as these are limited by how you setup your DOM, if it is conflicting with the underlying JS module, the Cypress Studio will throw an error
