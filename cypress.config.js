@@ -8,5 +8,7 @@ module.exports = defineConfig({
     baseUrl: "http://localhost:3000",
     viewportHeight: 550,
     viewportWidth: 660,
+    // enable cypres studio
+    experimentalStudio: true
   },
 });
