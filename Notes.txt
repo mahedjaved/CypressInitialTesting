@@ -1,0 +1,32 @@
+# Notes on Testing
+* Testing types : 
+* > E2E (End-to-End) testing
+* > Component Testing
+* Tests exist in the `e2e` folder
+* Cypress uses `Mocha` framework, a hint is use of `it` syntax for testing
+* `it( <name of test>, <callback function>)` contains two args : name, callback func
+
+# Cypress Studio
+* Has two features : 
+    * (1) Testrunner = Free
+    * (2) Dashboard = Paid feature
+* Cypress is built in Node.js (A JVM like environment for Java)
+* Cypress comes packaged as an "npm model"
+* 
+* Part of the experiments setup in the `settings` section as shown below:
+![alt text](image.png)
+* Helps us track each of our command as shown
+![alt text](image-1.png)
+* With this we can
+* Recording tools such as these are limited by how you setup your DOM, if it is conflicting with the underlying JS module, the Cypress Studio will throw an error
+* CS Studio is an experimental feature and depends heavily on the state of the application, poor data management can ruin the feature.
+* Selectors can be used to get hold of a seperate `component` of the DOM
+    * for `class` component html attribute use cy.get(`.<class-name>`)
+    * for `id` component html attribute use cy.get(`#<id>`)
+    * for other html attributes use cy.get(`[data-cy=board-item]`)
+* Use the DOM to get more info regarding the various properties:
+![alt text](image-2.png) 
+* cy commands can help traverse dom in any direction needed
+![alt text](image-3.png)
+* here is an example of us cy commands to interact with the webpage
+* 
