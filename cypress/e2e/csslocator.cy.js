@@ -1,0 +1,15 @@
+// const cypress = require("cypress");
+
+describe("CSSLocators", () => {
+  it("css locators test", () => {
+    // first launch the website
+    cy.visit("https://dribbble.com/search");
+    cy.get("#search").type("T-Shirts{enter}");
+    // cy.get("h1#search-results-heading").contains("t shirts");
+    cy.get("h1.search-results-heading").contains("t shirts");
+  });
+});
+
+{
+  /* <h1 class="search-results-heading">t shirts</h1> */
+}
