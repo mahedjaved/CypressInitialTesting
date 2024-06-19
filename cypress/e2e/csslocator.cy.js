@@ -10,6 +10,4 @@ describe("CSSLocators", () => {
   });
 });
 
-{
-  /* <h1 class="search-results-heading">t shirts</h1> */
-}
+// npm install -D cypress-xpath
