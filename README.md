@@ -2,3 +2,6 @@ Example project to start setting up initial testing in the Cypress testing libra
 
 # Opening Cypress
 > npx cypress open
+
+# Cypress Folder Structure
+![alt text](image-4.png)
