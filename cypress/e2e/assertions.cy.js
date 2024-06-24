@@ -1,6 +1,3 @@
-const { it } = require("mocha");
-const cypress = require("cypress");
-
 describe("Assertions demo", () => {
   it("Implicit assertions", () => {
     cy.visit("https://dribbble.com/search");
@@ -15,4 +12,3 @@ describe("Assertions demo", () => {
     cy.url().should("contain", "dribble");
   });
 });
-ƒ;
