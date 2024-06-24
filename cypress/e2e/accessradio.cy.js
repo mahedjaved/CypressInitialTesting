@@ -8,11 +8,21 @@ describe("Examining UI Elements, including radiobuttons and ", () => {
     cy.get(":nth-child(4) > label > span").should("be.visible");
 
     // selecting radio buttons, firstly select the first radio button
-    cy.get('label > input[name="group1"][type="radio"]').eq(2).check({ force: true });
+    cy.get('label > input[name="group1"][type="radio"]')
+      .eq(2)
+      .check({ force: true });
     // now check if it is selected, and others are deselected
-    cy.get('label > input[name="group1"][type="radio"]').eq(2).should("be.checked");
-    cy.get('label > input[name="group1"][type="radio"]').eq(0).should("not.be.checked");
-    cy.get('label > input[name="group1"][type="radio"]').eq(1).should("not.be.checked");
-    cy.get('label > input[name="group1"][type="radio"]').eq(3).should("not.be.checked");
+    cy.get('label > input[name="group1"][type="radio"]')
+      .eq(2)
+      .should("be.checked");
+    cy.get('label > input[name="group1"][type="radio"]')
+      .eq(0)
+      .should("not.be.checked");
+    cy.get('label > input[name="group1"][type="radio"]')
+      .eq(1)
+      .should("not.be.checked");
+    cy.get('label > input[name="group1"][type="radio"]')
+      .eq(3)
+      .should("not.be.checked");
   });
 });
