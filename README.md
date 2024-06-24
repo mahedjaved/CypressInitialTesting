@@ -11,11 +11,19 @@
 * Should
 * And
 
-> are two keyowrds we use for implicit assertions
+> Keywords in implicit assertions
 
+* eq
+* contain
+* include
+* exist
+* have.length
+* have.value
+* etc...
+
+> are two keyowrds we use for implicit assertions
 
 ## Explicit Assertions
 
 * Expect --> used in `BDD` approach
 * Assert --> used in `TDD` approach 
-

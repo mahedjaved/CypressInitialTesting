@@ -1,5 +1,3 @@
-// const cypress = require("cypress");
-
 describe("CSSLocators", () => {
   it("css locators test", () => {
     // first launch the website
