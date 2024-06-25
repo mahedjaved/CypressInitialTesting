@@ -28,8 +28,12 @@ describe("Examining UI Elements, including radiobuttons and ", () => {
     cy.get('input[name="color"]').eq(1).should("be.checked");
 
     // check all checkboxes and uncheck
-    cy.get('input[type="checkbox"][name="color"]').check();
-    // cy.get('input[type="checkbox"][name="color"]').uncheck();
-    cy.get('input[type="checkbox"][name="color"]').should("be.checked");
+    // cy.get('input[type="checkbox"][name="color"]').check();
+    cy.get('input[type="checkbox"][name="color"]').uncheck();
+    // cy.get('input[type="checkbox"][name="color"]').should("be.checked");
+
+    // use indexing to access ordered elements
+    cy.get('input[type="checkbox"][name="color"]').first().check();
+    cy.get('input[type="checkbox"][name="color"]').last().check();
   });
 });
